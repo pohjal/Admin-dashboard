@@ -1,0 +1,99 @@
+body {
+  background-color: gainsboro;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "Dashboard searchbar"
+    "Dashboard content"
+    "Dashboard content";
+  grid-template-columns: 300px 1fr 1fr 1fr; /* Two columns */
+  grid-template-rows: 100px 300px; /* Two rows */
+}
+.trending {
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: rgb(230, 240, 237);
+  grid-column-start: 4;
+  grid-row-start: 3;
+  gap: 10px;
+}
+.announcements {
+  margin-left: 30px;
+  margin-top: 30px;
+  gap: 10px;
+  background-color: rgb(230, 240, 237);
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.card-holder {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.searchbar {
+  display: grid;
+  grid-column: 2/ -1;
+  margin-left: 20px;
+}
+
+.search-yla {
+  display: grid;
+
+  grid-template-columns: auto auto auto auto auto; /* Adjust as needed */
+  align-items: center; /* Align items vertically */
+}
+.search-ala {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: center;
+}
+.profile-info {
+  text-align: center;
+}
+
+.search {
+  width: 400px;
+  height: 30px;
+}
+.dashboard {
+  background-color: aqua;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.action-button {
+  width: 200px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.card {
+  background-color: rgb(249, 247, 244);
+  border-left: 6px solid yellow;
+}
+ul {
+  list-style: none;
+}
+
+.trend-card {
+  border: solid 1px black;
+}
+.announcement-card {
+  background-color: rgb(234, 249, 244);
+}
